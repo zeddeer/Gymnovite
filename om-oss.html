@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Om oss — Gymnovite</title>
+<title>Om Gymnovite</title>
 <meta name="description" content="Gymnovite grundades av Christina Lövald Hellberg, f.d. elitidrottare och coach, som kombinerar styrketräning, neuroträning och energibehandlingar i ett integrerat synsätt.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,29 +15,39 @@
 <header class="banner page-banner" style="background-image:url('img/hero.jpg');">
   <div class="site-header">
     <a class="logo" href="index.html">Gymnovite</a>
-    <ul class="nav">
-      <li><a href="index.html">Hem</a></li>
-      <li><a href="om-oss.html" aria-current="page">Om oss</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
+    <div class="header-right">
+      <ul class="nav">
+        <li><a href="index.html" data-i18n="nav.home">Hem</a></li>
+        <li><a href="styrketraning.html" data-i18n="nav.strength">Styrketräning</a></li>
+        <li><a href="neurotraning.html" data-i18n="nav.neuro">Neuroträning</a></li>
+        <li><a href="behandlingar.html" data-i18n="nav.treatments">Behandlingar</a></li>
+        <li><a href="om-oss.html" aria-current="page" data-i18n="nav.about">Om oss</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <a class="nav-cta" href="boka.html" data-i18n="nav.book">Boka tid</a>
+      <div class="lang-switch" role="group" aria-label="Språk / Language">
+        <button type="button" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
   </div>
-  <h2>About Gymnovite</h2>
+  <h2 data-i18n="about.banner">Om Gymnovite</h2>
 </header>
 
 <main>
 
   <section>
     <div class="wrap">
-      <h2 class="heading">Gymnovite Philosophy</h2>
-      <p class="subhead">What if healing begins with information?</p>
-      <p>Every experience leaves an imprint. Your brain, body, emotions, and experiences constantly shape how you move, feel, and respond to the world.</p>
-      <p>At Gymnovite, we don't see strength, movement, and healing as separate. We see them as different ways of helping the body receive the information it needs to feel safe enough to change.</p>
+      <h2 class="heading" data-i18n="about.philosophy.title">Gymnovites filosofi</h2>
+      <p class="subhead" data-i18n="about.philosophy.subhead">Tänk om läkning börjar med information?</p>
+      <p data-i18n="about.philosophy.p1">Varje upplevelse lämnar ett avtryck. Din hjärna, kropp, dina känslor och erfarenheter formar ständigt hur du rör dig, mår och möter världen.</p>
+      <p data-i18n="about.philosophy.p2">På Gymnovite ser vi inte styrka, rörelse och läkning som separata delar. Vi ser dem som olika sätt att hjälpa kroppen få den information den behöver för att känna sig trygg nog att förändras.</p>
       <ul class="philosophy-list">
-        <li>Strength Training restores efficient movement.</li>
-        <li>Neuro Training restores the brain's sensory input.</li>
-        <li>Treatments support restoration through Reiki and sound therapy.</li>
+        <li data-i18n="about.philosophy.list1">Styrketräning återställer effektiv rörelse.</li>
+        <li data-i18n="about.philosophy.list2">Neuroträning återställer hjärnans sensoriska input.</li>
+        <li data-i18n="about.philosophy.list3">Behandlingar stödjer återhämtning genom Reiki och ljudterapi.</li>
       </ul>
-      <p>Together, they create one philosophy: working with the body's own capacity to adapt, restore, and return to balance.</p>
+      <p data-i18n="about.philosophy.p3">Tillsammans skapar de en gemensam filosofi: att arbeta med kroppens egen förmåga att anpassa sig, återhämta sig och återfå balans.</p>
     </div>
   </section>
 
@@ -46,13 +56,13 @@
       <img src="img/founder.jpg" alt="Christina Lövald Hellberg, grundare av Gymnovite" loading="lazy">
       <div>
         <p class="name">Christina Lövald Hellberg</p>
-        <p class="role">Founder of Gymnovite</p>
-        <p>As a former elite athlete and coach, I spent years searching for better ways to improve movement, recover from injury, and unlock human potential.</p>
-        <p>After experiencing injuries myself, I realized that lasting change isn't created by strengthening muscles alone. Our movement is shaped by our biomechanics, our nervous system, and the experiences that influence how safe our bodies feel.</p>
-        <p>Today, I combine science-based strength training, neuro training, and energy healing modalities into one integrated approach. My goal is to help you move with greater ease, build lasting strength, and reconnect with your body's natural ability to heal.</p>
-        <p>Because true transformation begins when the body, brain, and mind work together.</p>
+        <p class="role" data-i18n="about.founder.role">Grundare av Gymnovite</p>
+        <p data-i18n="about.founder.p1">Som f.d. elitidrottare och coach har jag ägnat många år åt att söka bättre sätt att förbättra rörelse, återhämta sig från skador och frigöra mänsklig potential.</p>
+        <p data-i18n="about.founder.p2">Efter att själv ha drabbats av skador insåg jag att bestående förändring inte skapas enbart genom att stärka muskler. Vår rörelse formas av vår biomekanik, vårt nervsystem och de erfarenheter som påverkar hur trygg vår kropp känner sig.</p>
+        <p data-i18n="about.founder.p3">Idag kombinerar jag vetenskapligt grundad styrketräning, neuroträning och energibaserade behandlingsformer i en integrerad metod. Mitt mål är att hjälpa dig röra dig med större lätthet, bygga bestående styrka och återknyta kontakten med kroppens naturliga läkningsförmåga.</p>
+        <p data-i18n="about.founder.p4">För verklig förändring börjar när kropp, hjärna och sinne samarbetar.</p>
         <div class="actions" style="margin-top:1.5rem;">
-          <a class="btn" href="kontakt.html">Book a Session</a>
+          <a class="btn" href="boka.html" data-i18n="common.bookSession">Boka en session</a>
         </div>
       </div>
     </div>
@@ -63,10 +73,46 @@
 <footer>
   <div class="wrap">
     <p>Götavägen 52, 187 63 Täby &middot; +46 73 063 78 78 &middot; <a href="mailto:christina@gymnovite.com">christina@gymnovite.com</a></p>
+    <div class="lang-switch on-light" role="group" aria-label="Språk / Language">
+      <button type="button" data-lang="sv" aria-pressed="true">Svenska</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
     <p class="credit">&copy; <span id="year"></span> Gymnovite</p>
   </div>
 </footer>
 
+<script>
+window.I18N_TITLE = {
+  sv: "Om Gymnovite",
+  en: "About Gymnovite"
+};
+window.I18N = {
+  "nav.home": { sv: "Hem", en: "Home" },
+  "nav.strength": { sv: "Styrketräning", en: "Strength Training" },
+  "nav.neuro": { sv: "Neuroträning", en: "Neuro Training" },
+  "nav.treatments": { sv: "Behandlingar", en: "Treatments" },
+  "nav.about": { sv: "Om oss", en: "About" },
+  "nav.contact": { sv: "Kontakt", en: "Contact" },
+  "nav.book": { sv: "Boka tid", en: "Book Now" },
+  "common.bookSession": { sv: "Boka en session", en: "Book a Session" },
+
+  "about.banner": { sv: "Om Gymnovite", en: "About Gymnovite" },
+  "about.philosophy.title": { sv: "Gymnovites filosofi", en: "Gymnovite Philosophy" },
+  "about.philosophy.subhead": { sv: "Tänk om läkning börjar med information?", en: "What if healing begins with information?" },
+  "about.philosophy.p1": { sv: "Varje upplevelse lämnar ett avtryck. Din hjärna, kropp, dina känslor och erfarenheter formar ständigt hur du rör dig, mår och möter världen.", en: "Every experience leaves an imprint. Your brain, body, emotions, and experiences constantly shape how you move, feel, and respond to the world." },
+  "about.philosophy.p2": { sv: "På Gymnovite ser vi inte styrka, rörelse och läkning som separata delar. Vi ser dem som olika sätt att hjälpa kroppen få den information den behöver för att känna sig trygg nog att förändras.", en: "At Gymnovite, we don't see strength, movement, and healing as separate. We see them as different ways of helping the body receive the information it needs to feel safe enough to change." },
+  "about.philosophy.list1": { sv: "Styrketräning återställer effektiv rörelse.", en: "Strength Training restores efficient movement." },
+  "about.philosophy.list2": { sv: "Neuroträning återställer hjärnans sensoriska input.", en: "Neuro Training restores the brain's sensory input." },
+  "about.philosophy.list3": { sv: "Behandlingar stödjer återhämtning genom Reiki och ljudterapi.", en: "Treatments support restoration through Reiki and sound therapy." },
+  "about.philosophy.p3": { sv: "Tillsammans skapar de en gemensam filosofi: att arbeta med kroppens egen förmåga att anpassa sig, återhämta sig och återfå balans.", en: "Together, they create one philosophy: working with the body's own capacity to adapt, restore, and return to balance." },
+
+  "about.founder.role": { sv: "Grundare av Gymnovite", en: "Founder of Gymnovite" },
+  "about.founder.p1": { sv: "Som f.d. elitidrottare och coach har jag ägnat många år åt att söka bättre sätt att förbättra rörelse, återhämta sig från skador och frigöra mänsklig potential.", en: "As a former elite athlete and coach, I spent years searching for better ways to improve movement, recover from injury, and unlock human potential." },
+  "about.founder.p2": { sv: "Efter att själv ha drabbats av skador insåg jag att bestående förändring inte skapas enbart genom att stärka muskler. Vår rörelse formas av vår biomekanik, vårt nervsystem och de erfarenheter som påverkar hur trygg vår kropp känner sig.", en: "After experiencing injuries myself, I realized that lasting change isn't created by strengthening muscles alone. Our movement is shaped by our biomechanics, our nervous system, and the experiences that influence how safe our bodies feel." },
+  "about.founder.p3": { sv: "Idag kombinerar jag vetenskapligt grundad styrketräning, neuroträning och energibaserade behandlingsformer i en integrerad metod. Mitt mål är att hjälpa dig röra dig med större lätthet, bygga bestående styrka och återknyta kontakten med kroppens naturliga läkningsförmåga.", en: "Today, I combine science-based strength training, neuro training, and energy healing modalities into one integrated approach. My goal is to help you move with greater ease, build lasting strength, and reconnect with your body's natural ability to heal." },
+  "about.founder.p4": { sv: "För verklig förändring börjar när kropp, hjärna och sinne samarbetar.", en: "Because true transformation begins when the body, brain, and mind work together." }
+};
+</script>
 <script src="app.js"></script>
 </body>
 </html>

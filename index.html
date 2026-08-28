@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gymnovite — Move better. Feel better.</title>
+<title>Gymnovite — Rör dig bättre. Må bättre.</title>
 <meta name="description" content="Gymnovite kombinerar vetenskaplig styrketräning, neuroträning och energibehandlingar (Reiki &amp; ljudterapi) för att återställa rörelse och balans.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,163 +15,100 @@
 <header class="hero" style="background-image:url('img/hero.jpg');">
   <div class="site-header">
     <a class="logo" href="index.html">Gymnovite</a>
-    <ul class="nav">
-      <li><a href="index.html" aria-current="page">Hem</a></li>
-      <li><a href="om-oss.html">Om oss</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
+    <div class="header-right">
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page" data-i18n="nav.home">Hem</a></li>
+        <li><a href="styrketraning.html" data-i18n="nav.strength">Styrketräning</a></li>
+        <li><a href="neurotraning.html" data-i18n="nav.neuro">Neuroträning</a></li>
+        <li><a href="behandlingar.html" data-i18n="nav.treatments">Behandlingar</a></li>
+        <li><a href="om-oss.html" data-i18n="nav.about">Om oss</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <a class="nav-cta" href="boka.html" data-i18n="nav.book">Boka tid</a>
+      <div class="lang-switch" role="group" aria-label="Språk / Language">
+        <button type="button" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
   </div>
   <div class="hero-content">
-    <h1>Move Better<br>Feel Better</h1>
-    <p>What if the main key to better movement isn't your muscles&mdash;but your brain?</p>
+    <h1 data-i18n="home.hero.title">Rör dig bättre<br>Må bättre</h1>
+    <p data-i18n="home.hero.subtitle">Tänk om nyckeln till bättre rörelse inte är dina muskler &mdash; utan din hjärna?</p>
   </div>
 </header>
 
 <main>
 
-  <!-- Strength Training intro -->
   <section>
-    <div class="wrap split">
-      <img src="img/strength.jpg" alt="Styrketräning med motståndsband vid havet" loading="lazy">
-      <div>
-        <p class="eyebrow">Strength Training</p>
-        <p class="subhead">Restore movement. Build strength.</p>
-        <p>Science-based weight training based on modern biomechanics that improves breathing, alignment, and mobility while building strength.</p>
-        <div class="actions">
-          <a class="btn" href="#strength-training">Explore Strength</a>
-          <a class="btn" href="kontakt.html">Book Now</a>
+    <div class="wrap">
+      <div class="section-intro">
+        <p class="eyebrow" data-i18n="home.services.eyebrow">Tre vägar till samma mål</p>
+        <h2 class="heading" data-i18n="home.services.title">Rörelse, nervsystem och återhämtning &mdash; som ett integrerat synsätt.</h2>
+      </div>
+
+      <div class="service-grid">
+        <a class="service-card" href="styrketraning.html">
+          <img src="img/strength.jpg" alt="Styrketräning med motståndsband vid havet" loading="lazy">
+          <div class="service-card-body">
+            <p class="eyebrow" data-i18n="home.card.strength.eyebrow">Styrketräning</p>
+            <p class="subhead" data-i18n="home.card.strength.subhead">Återställ rörelse. Bygg styrka.</p>
+            <p data-i18n="home.card.strength.body">Vetenskapligt grundad styrketräning baserad på modern biomekanik som förbättrar andning, kroppshållning och rörlighet samtidigt som du bygger styrka.</p>
+            <span class="card-link" data-i18n="home.card.strength.link">Utforska styrketräning &rarr;</span>
+          </div>
+        </a>
+
+        <a class="service-card" href="neurotraning.html">
+          <img src="img/neuro.jpg" alt="Neuroträning, sidoplanka på klippa" loading="lazy">
+          <div class="service-card-body">
+            <p class="eyebrow" data-i18n="home.card.neuro.eyebrow">Neuroträning</p>
+            <p class="subhead" data-i18n="home.card.neuro.subhead">Träna systemen bakom varje rörelse.</p>
+            <p data-i18n="home.card.neuro.body">Vetenskapligt grundade övningar för syn, balans och kroppsmedvetenhet som minskar muskelspänningar och förbättrar prestationen.</p>
+            <span class="card-link" data-i18n="home.card.neuro.link">Utforska neuroträning &rarr;</span>
+          </div>
+        </a>
+
+        <a class="service-card" href="behandlingar.html">
+          <img src="img/treatments.jpg" alt="Behandling, Reiki och ljudterapi" loading="lazy">
+          <div class="service-card-body">
+            <p class="eyebrow" data-i18n="home.card.treatments.eyebrow">Behandlingar</p>
+            <p class="subhead" data-i18n="home.card.treatments.subhead">Återställ balans. Hitta lugn.</p>
+            <p data-i18n="home.card.treatments.body">Energibehandlingar genom Reiki och ljudterapi som stödjer nervsystemets reglering, djup avslappning och ett övergripande välmående.</p>
+            <span class="card-link" data-i18n="home.card.treatments.link">Utforska behandlingar &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="quote-block bg-tint" style="max-width:none;">
+    <div class="wrap" style="max-width:760px;">
+      <span class="mark">&ldquo;</span>
+      <blockquote data-i18n="home.quote1">Ibland har kroppen återfått sin fysiska förmåga att röra sig, men nervsystemet kan ändå reagera med skydd baserat på tidigare erfarenheter.</blockquote>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="section-intro" style="margin-bottom:0;">
+        <p class="eyebrow" data-i18n="home.philosophy.eyebrow">Gymnovite-filosofin</p>
+        <h2 class="heading" data-i18n="home.philosophy.title">Vi ser inte styrka, rörelse och läkning som separata delar.</h2>
+        <p data-i18n="home.philosophy.body">Vi ser dem som olika sätt att hjälpa kroppen få den information den behöver för att känna sig trygg nog att förändras. Läs mer om filosofin och grundaren Christina Lövald Hellberg.</p>
+        <div class="btn-center-wrap">
+          <a class="btn btn-outline" href="om-oss.html" data-i18n="home.philosophy.cta">Om Gymnovite</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Neuro Training intro -->
-  <section class="bg-tint">
-    <div class="wrap split">
-      <img src="img/neuro.jpg" alt="Neuroträning, sidoplanka på klippa" loading="lazy">
-      <div>
-        <p class="eyebrow">Neuro Training</p>
-        <p class="subhead">Train the systems behind every movement.</p>
-        <p>Science-based drills for vision, balance, and body awareness to reduce muscular tension and improve performance.</p>
-        <div class="actions">
-          <a class="btn" href="#neuro-training">Explore Neuro Training</a>
-          <a class="btn" href="kontakt.html">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Treatments intro -->
-  <section>
-    <div class="wrap split">
-      <img src="img/treatments.jpg" alt="Behandling, Reiki och ljudterapi" loading="lazy">
-      <div>
-        <p class="eyebrow">Treatments</p>
-        <p class="subhead">Restore balance. Find calm.</p>
-        <p>Energetic treatments through Reiki and sound therapy that support nervous system regulation, deep relaxation, and overall well-being.</p>
-        <div class="actions">
-          <a class="btn" href="#treatments">Explore Treatments</a>
-          <a class="btn" href="kontakt.html">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quote -->
-  <div class="quote-block">
-    <span class="mark">&ldquo;</span>
-    <blockquote>Sometimes the body has regained the physical capacity to move, yet the nervous system may still respond with protection based on previous experiences.</blockquote>
-  </div>
-
-  <!-- Strength Training detail -->
-  <div id="strength-training" class="banner" style="background-image:url('img/strength-banner.jpg');">
-    <h2>Strength Training</h2>
-  </div>
-  <section>
-    <div class="wrap">
-      <h2 class="heading">Work with me to build a strength program designed specifically for the way your body moves.</h2>
-      <p>Most strength programs ask how to make you stronger. This approach first asks how your body was designed to move.</p>
-      <p>Built on modern biomechanics, gait principles, and contemporary movement science&mdash;including concepts developed by movement specialist Conor Harris&mdash;we look at how your body breathes, rotates, transfers force, and adapts. Your strength program is then designed to restore efficient movement while helping you become stronger, more balanced, and more resilient.</p>
-      <p class="subhead">When you book this session, you'll receive:</p>
-      <ul class="checklist">
-        <li>A personalized biomechanical assessment</li>
-        <li>A gym-based strength training program designed specifically for your body</li>
-        <li>A smarter approach to building strength through better movement</li>
-      </ul>
-      <h2 class="heading">Your body can learn to move differently.</h2>
-      <p>You don't have to accept pain, stiffness, or limited movement just because you've spent years at a desk, played one sport, or recovered from an injury.</p>
-      <p>Modern biomechanics is changing the way we understand movement. By understanding how your body has adapted, we can help restore balance, improve movement, and build lasting strength.</p>
-      <div class="btn-center-wrap">
-        <a class="btn" href="kontakt.html">Book a Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Neuro Training detail -->
-  <div id="neuro-training" class="banner" style="background-image:url('img/neuro-banner.jpg');">
-    <h2>Neuro Training</h2>
-  </div>
-  <section class="bg-tint">
-    <div class="wrap">
-      <h2 class="heading">Train the systems behind every movement.</h2>
-      <p>Long before a muscle contracts, your brain has already decided how it wants your body to move.</p>
-      <p>Every second, it receives information from your eyes, inner ears, joints, muscles, and skin. Together, these systems determine whether movement feels safe, coordinated, and efficient&mdash;or whether your body responds with tension and protection.</p>
-      <p>Neuro Training uses simple, science-based drills for vision, balance, body awareness, breathing, and coordination to improve the quality of that information.</p>
-      <div class="quote-block" style="padding-left:0;padding-right:0;">
-        <span class="mark">&ldquo;</span>
-        <blockquote>Small changes in the information your brain receives can sometimes create surprisingly big changes in how your body moves and feels.</blockquote>
-      </div>
-      <p class="subhead">When you book this session, you'll receive:</p>
-      <ul class="checklist">
-        <li>An introduction to Neuro Training</li>
-        <li>Simple drills for vision, balance, and body awareness</li>
-        <li>Videos and exercises you can continue practicing at home</li>
-      </ul>
-      <h2 class="heading">Discover a new way to understand movement.</h2>
-      <p>Most of us have been taught to train our muscles. Few of us have been taught to train the systems that control them.</p>
-      <p>Whether you're recovering from an injury, feeling stiff, or simply curious about how your brain influences movement, Neuro Training offers a completely different perspective on how the body works.</p>
-      <p>Sometimes changing the input changes the output.</p>
-      <div class="btn-center-wrap">
-        <a class="btn" href="kontakt.html">Book a Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Treatments detail -->
-  <div id="treatments" class="banner" style="background-image:url('img/treatments-banner.jpg');">
-    <h2>Treatments</h2>
-  </div>
-  <section>
-    <div class="wrap">
-      <h2 class="heading">Your body is complex. Sometimes movement, strength training, and neuroscience are enough to restore balance.<br>Sometimes they aren't.</h2>
-      <p>You may have regained the physical ability to move, yet still feel like something is holding you back. Stress, fear, difficult life experiences, or long-held thought patterns can sometimes continue influencing how you experience your body, even when everything else seems ready to move forward.</p>
-      <p>That's where Reiki and Sound Healing can offer another layer of support.</p>
-      <p>While Strength Training works through movement and Neuro Training works through the nervous system, these treatments are intended to complement those approaches by creating space to explore the emotional, mental, and energetic patterns that may also be part of your experience.</p>
-      <p>Because healing doesn't always happen through action. Sometimes it begins by creating the conditions where change feels safe.</p>
-
-      <p class="subhead">What happens during a treatment?</p>
-      <p>You'll spend around <strong>60 minutes</strong> resting comfortably on a treatment bed while simply allowing yourself to receive.</p>
-      <p>Depending on your preference, the session includes <strong>Reiki</strong> or <strong>Sound Healing with tuning forks</strong>.</p>
-      <p>Many people use these sessions to support relaxation, process emotional experiences, reconnect with themselves, or explore deeper patterns that they feel may be influencing how they move through life.</p>
-      <p>Your only job is to relax. Mine is to create a calm, supportive space where you can slow down, reconnect, and listen to what your body may be ready to show you. Every session is different because every person is different.</p>
-
-      <p class="subhead">If this resonates with you&hellip;</p>
-      <p>Not everyone feels called to this way of working&mdash;and that's okay.</p>
-      <p>But if you feel there's more to your healing journey than movement alone, these treatments offer another path of exploration and support.</p>
-      <p>Sometimes the greatest transformation begins not by doing more&hellip; but by allowing yourself to receive.</p>
-      <div class="btn-center-wrap">
-        <a class="btn" href="kontakt.html">Book a Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Closing quote with photo -->
   <section class="bg-tint">
     <div class="wrap quote-photo">
       <img src="img/quote.jpg" alt="Löpning på stranden i solnedgången" loading="lazy">
       <div>
         <span class="mark">&ldquo;</span>
-        <blockquote>Healing happens when the body receives the information it needs to feel safe enough to change.</blockquote>
+        <blockquote data-i18n="home.quote2">Läkning sker när kroppen får den information den behöver för att känna sig trygg nog att förändras.</blockquote>
+        <div style="margin-top:1.75rem;">
+          <a class="btn" href="boka.html" data-i18n="nav.book">Boka tid</a>
+        </div>
       </div>
     </div>
   </section>
@@ -181,10 +118,59 @@
 <footer>
   <div class="wrap">
     <p>Götavägen 52, 187 63 Täby &middot; +46 73 063 78 78 &middot; <a href="mailto:christina@gymnovite.com">christina@gymnovite.com</a></p>
+    <div class="lang-switch on-light" role="group" aria-label="Språk / Language">
+      <button type="button" data-lang="sv" aria-pressed="true">Svenska</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
     <p class="credit">&copy; <span id="year"></span> Gymnovite</p>
   </div>
 </footer>
 
+<script>
+window.I18N_TITLE = {
+  sv: "Gymnovite — Rör dig bättre. Må bättre.",
+  en: "Gymnovite — Move Better. Feel Better."
+};
+window.I18N = {
+  "nav.home": { sv: "Hem", en: "Home" },
+  "nav.strength": { sv: "Styrketräning", en: "Strength Training" },
+  "nav.neuro": { sv: "Neuroträning", en: "Neuro Training" },
+  "nav.treatments": { sv: "Behandlingar", en: "Treatments" },
+  "nav.about": { sv: "Om oss", en: "About" },
+  "nav.contact": { sv: "Kontakt", en: "Contact" },
+  "nav.book": { sv: "Boka tid", en: "Book Now" },
+
+  "home.hero.title": { sv: "Rör dig bättre<br>Må bättre", en: "Move Better<br>Feel Better" },
+  "home.hero.subtitle": { sv: "Tänk om nyckeln till bättre rörelse inte är dina muskler &mdash; utan din hjärna?", en: "What if the main key to better movement isn't your muscles&mdash;but your brain?" },
+
+  "home.services.eyebrow": { sv: "Tre vägar till samma mål", en: "Three paths, one goal" },
+  "home.services.title": { sv: "Rörelse, nervsystem och återhämtning &mdash; som ett integrerat synsätt.", en: "Movement, nervous system, and recovery &mdash; as one integrated approach." },
+
+  "home.card.strength.eyebrow": { sv: "Styrketräning", en: "Strength Training" },
+  "home.card.strength.subhead": { sv: "Återställ rörelse. Bygg styrka.", en: "Restore movement. Build strength." },
+  "home.card.strength.body": { sv: "Vetenskapligt grundad styrketräning baserad på modern biomekanik som förbättrar andning, kroppshållning och rörlighet samtidigt som du bygger styrka.", en: "Science-based weight training based on modern biomechanics that improves breathing, alignment, and mobility while building strength." },
+  "home.card.strength.link": { sv: "Utforska styrketräning &rarr;", en: "Explore Strength Training &rarr;" },
+
+  "home.card.neuro.eyebrow": { sv: "Neuroträning", en: "Neuro Training" },
+  "home.card.neuro.subhead": { sv: "Träna systemen bakom varje rörelse.", en: "Train the systems behind every movement." },
+  "home.card.neuro.body": { sv: "Vetenskapligt grundade övningar för syn, balans och kroppsmedvetenhet som minskar muskelspänningar och förbättrar prestationen.", en: "Science-based drills for vision, balance, and body awareness to reduce muscular tension and improve performance." },
+  "home.card.neuro.link": { sv: "Utforska neuroträning &rarr;", en: "Explore Neuro Training &rarr;" },
+
+  "home.card.treatments.eyebrow": { sv: "Behandlingar", en: "Treatments" },
+  "home.card.treatments.subhead": { sv: "Återställ balans. Hitta lugn.", en: "Restore balance. Find calm." },
+  "home.card.treatments.body": { sv: "Energibehandlingar genom Reiki och ljudterapi som stödjer nervsystemets reglering, djup avslappning och ett övergripande välmående.", en: "Energetic treatments through Reiki and sound therapy that support nervous system regulation, deep relaxation, and overall well-being." },
+  "home.card.treatments.link": { sv: "Utforska behandlingar &rarr;", en: "Explore Treatments &rarr;" },
+
+  "home.quote1": { sv: "Ibland har kroppen återfått sin fysiska förmåga att röra sig, men nervsystemet kan ändå reagera med skydd baserat på tidigare erfarenheter.", en: "Sometimes the body has regained the physical capacity to move, yet the nervous system may still respond with protection based on previous experiences." },
+
+  "home.philosophy.eyebrow": { sv: "Gymnovite-filosofin", en: "The Gymnovite philosophy" },
+  "home.philosophy.title": { sv: "Vi ser inte styrka, rörelse och läkning som separata delar.", en: "We don't see strength, movement, and healing as separate." },
+  "home.philosophy.body": { sv: "Vi ser dem som olika sätt att hjälpa kroppen få den information den behöver för att känna sig trygg nog att förändras. Läs mer om filosofin och grundaren Christina Lövald Hellberg.", en: "We see them as different ways of helping the body receive the information it needs to feel safe enough to change. Read more about the philosophy and founder Christina Lövald Hellberg." },
+  "home.philosophy.cta": { sv: "Om Gymnovite", en: "About Gymnovite" },
+
+  "home.quote2": { sv: "Läkning sker när kroppen får den information den behöver för att känna sig trygg nog att förändras.", en: "Healing happens when the body receives the information it needs to feel safe enough to change." }
+};
+</script>
 <script src="app.js"></script>
 </body>
 </html>
