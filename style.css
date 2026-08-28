@@ -776,7 +776,8 @@ footer .lang-switch {
 
 /* ---------- Mobile nav (v3) ----------
    Keep every link visible like the original layout — the header just
-   stops overlaying the photo and becomes its own solid bar above it, so
+   stops overlaying the photo and moves below the hero/banner title as its
+   own solid bar, in that order (image + title first, menu block after), so
    a wrapped, multi-row nav never overlaps page titles. Placed last so it
    wins over the .hero/.banner/.banner h2 rules above at equal specificity. */
 
@@ -788,6 +789,9 @@ footer .lang-switch {
   .hero,
   .banner {
     display: block;
+    /* Height now comes from the title's own padding plus the menu bar
+       below it, not from forcing the photo to fill most of the viewport. */
+    min-height: 0;
   }
 
   .site-header {
@@ -803,11 +807,11 @@ footer .lang-switch {
   }
 
   .hero-content {
-    padding: 3.5rem 1.5rem 3rem;
+    padding: 3rem 1.5rem 2.5rem;
   }
 
   .banner h2 {
-    padding: 3rem 1.5rem;
+    padding: 2.5rem 1.5rem;
   }
 
   .header-right {
