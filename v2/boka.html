@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boka tid — Gymnovite</title>
+<meta name="description" content="Boka styrketräning, neuroträning eller behandling hos Gymnovite — online eller i studion i Täby.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="banner page-banner" style="background-image:url('img/strength-banner.jpg');">
+  <div class="site-header">
+    <a class="logo" href="index.html">Gymnovite</a>
+    <div class="header-right">
+      <ul class="nav">
+        <li><a href="index.html" data-i18n="nav.home">Hem</a></li>
+        <li><a href="styrketraning.html" data-i18n="nav.strength">Styrketräning</a></li>
+        <li><a href="neurotraning.html" data-i18n="nav.neuro">Neuroträning</a></li>
+        <li><a href="behandlingar.html" data-i18n="nav.treatments">Behandlingar</a></li>
+        <li><a href="om-oss.html" data-i18n="nav.about">Om oss</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <a class="nav-cta" href="boka.html" aria-current="page" data-i18n="nav.book">Boka tid</a>
+      <div class="lang-switch" role="group" aria-label="Språk / Language">
+        <button type="button" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+  <h2 data-i18n="nav.book">Boka tid</h2>
+</header>
+
+<main>
+
+  <section>
+    <div class="wrap">
+      <div class="section-intro">
+        <h2 class="heading" data-i18n="booking.intro.title">Välj den session som passar dig</h2>
+        <p data-i18n="booking.intro.body">Varje session börjar med ett kort samtal så att vi tillsammans kan hitta rätt utgångspunkt. Välj en kategori nedan och maila mig direkt &mdash; jag återkommer med lediga tider.</p>
+      </div>
+
+      <div class="booking-grid">
+        <div class="booking-card">
+          <p class="eyebrow" data-i18n="nav.strength">Styrketräning</p>
+          <p data-i18n="booking.card.strength.body">Personlig biomekanisk bedömning och ett skräddarsytt styrkeprogram, byggt på hur din kropp rör sig.</p>
+          <a class="btn" href="mailto:christina@gymnovite.com?subject=Bokningsf%C3%B6rfr%C3%A5gan%3A%20Styrketr%C3%A4ning" data-i18n="booking.card.strength.cta">Boka styrketräning</a>
+          <a href="styrketraning.html" class="card-link" style="font-family:'Poppins',sans-serif;font-weight:600;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--accent-dark);text-decoration:none;" data-i18n="booking.card.readMore">Läs mer &rarr;</a>
+        </div>
+
+        <div class="booking-card">
+          <p class="eyebrow" data-i18n="nav.neuro">Neuroträning</p>
+          <p data-i18n="booking.card.neuro.body">En introduktion till neuroträning med enkla övningar för syn, balans och kroppsmedvetenhet.</p>
+          <a class="btn" href="mailto:christina@gymnovite.com?subject=Bokningsf%C3%B6rfr%C3%A5gan%3A%20Neurotr%C3%A4ning" data-i18n="booking.card.neuro.cta">Boka neuroträning</a>
+          <a href="neurotraning.html" class="card-link" style="font-family:'Poppins',sans-serif;font-weight:600;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--accent-dark);text-decoration:none;" data-i18n="booking.card.readMore">Läs mer &rarr;</a>
+        </div>
+
+        <div class="booking-card">
+          <p class="eyebrow" data-i18n="nav.treatments">Behandlingar</p>
+          <p data-i18n="booking.card.treatments.body">Cirka 60 minuter Reiki eller ljudterapi med stämgafflar, i lugn och ro.</p>
+          <a class="btn" href="mailto:christina@gymnovite.com?subject=Bokningsf%C3%B6rfr%C3%A5gan%3A%20Behandling" data-i18n="booking.card.treatments.cta">Boka behandling</a>
+          <a href="behandlingar.html" class="card-link" style="font-family:'Poppins',sans-serif;font-weight:600;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--accent-dark);text-decoration:none;" data-i18n="booking.card.readMore">Läs mer &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-tint">
+    <div class="wrap">
+      <div class="section-intro">
+        <h2 class="heading" data-i18n="booking.where.title">Var vill du ses?</h2>
+      </div>
+
+      <div class="availability-grid">
+        <div class="contact-item">
+          <span class="icon">&#128421;</span>
+          <div>
+            <strong data-i18n="contact.online.title">Onlinestudio</strong>
+            <span data-i18n="booking.online.body">Videosamtal, var du än befinner dig.</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon">&#128205;</span>
+          <div>
+            <strong data-i18n="contact.studio.title">Gym &amp; behandlingsrum</strong>
+            <span>Götavägen 52, 187 63 Täby</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-center-wrap">
+        <p data-i18n="booking.form.prompt" style="margin-bottom:1rem;">Föredrar du att skriva istället? Använd kontaktformuläret.</p>
+        <a class="btn btn-outline" href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Götavägen 52, 187 63 Täby &middot; +46 73 063 78 78 &middot; <a href="mailto:christina@gymnovite.com">christina@gymnovite.com</a></p>
+    <div class="lang-switch on-light" role="group" aria-label="Språk / Language">
+      <button type="button" data-lang="sv" aria-pressed="true">Svenska</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+    <p class="credit">&copy; <span id="year"></span> Gymnovite</p>
+  </div>
+</footer>
+
+<script>
+window.I18N_TITLE = {
+  sv: "Boka tid — Gymnovite",
+  en: "Book a Session — Gymnovite"
+};
+window.I18N = {
+  "nav.home": { sv: "Hem", en: "Home" },
+  "nav.strength": { sv: "Styrketräning", en: "Strength Training" },
+  "nav.neuro": { sv: "Neuroträning", en: "Neuro Training" },
+  "nav.treatments": { sv: "Behandlingar", en: "Treatments" },
+  "nav.about": { sv: "Om oss", en: "About" },
+  "nav.contact": { sv: "Kontakt", en: "Contact" },
+  "nav.book": { sv: "Boka tid", en: "Book Now" },
+
+  "contact.online.title": { sv: "Onlinestudio", en: "Online Studio" },
+  "contact.studio.title": { sv: "Gym &amp; behandlingsrum", en: "Gym &amp; Treatment Room" },
+
+  "booking.intro.title": { sv: "Välj den session som passar dig", en: "Choose the session that fits you" },
+  "booking.intro.body": { sv: "Varje session börjar med ett kort samtal så att vi tillsammans kan hitta rätt utgångspunkt. Välj en kategori nedan och maila mig direkt &mdash; jag återkommer med lediga tider.", en: "Every session starts with a short conversation so we can figure out the right starting point together. Pick a category below and email me directly &mdash; I'll get back to you with available times." },
+
+  "booking.card.strength.body": { sv: "Personlig biomekanisk bedömning och ett skräddarsytt styrkeprogram, byggt på hur din kropp rör sig.", en: "A personalized biomechanical assessment and a tailored strength program, built around how your body moves." },
+  "booking.card.strength.cta": { sv: "Boka styrketräning", en: "Book Strength Training" },
+
+  "booking.card.neuro.body": { sv: "En introduktion till neuroträning med enkla övningar för syn, balans och kroppsmedvetenhet.", en: "An introduction to Neuro Training with simple drills for vision, balance, and body awareness." },
+  "booking.card.neuro.cta": { sv: "Boka neuroträning", en: "Book Neuro Training" },
+
+  "booking.card.treatments.body": { sv: "Cirka 60 minuter Reiki eller ljudterapi med stämgafflar, i lugn och ro.", en: "About 60 minutes of Reiki or Sound Healing with tuning forks, in a calm setting." },
+  "booking.card.treatments.cta": { sv: "Boka behandling", en: "Book a Treatment" },
+
+  "booking.card.readMore": { sv: "Läs mer &rarr;", en: "Read more &rarr;" },
+
+  "booking.where.title": { sv: "Var vill du ses?", en: "Where would you like to meet?" },
+  "booking.online.body": { sv: "Videosamtal, var du än befinner dig.", en: "Video call sessions, wherever you are." },
+
+  "booking.form.prompt": { sv: "Föredrar du att skriva istället? Använd kontaktformuläret.", en: "Prefer to write instead? Use the contact form." }
+};
+</script>
+<script src="app.js"></script>
+</body>
+</html>

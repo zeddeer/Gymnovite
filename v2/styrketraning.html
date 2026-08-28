@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styrketräning — Gymnovite</title>
+<meta name="description" content="Vetenskapligt grundad styrketräning baserad på modern biomekanik — ett program utformat specifikt för hur din kropp rör sig.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="banner page-banner" style="background-image:url('img/strength-banner.jpg');">
+  <div class="site-header">
+    <a class="logo" href="index.html">Gymnovite</a>
+    <div class="header-right">
+      <ul class="nav">
+        <li><a href="index.html" data-i18n="nav.home">Hem</a></li>
+        <li><a href="styrketraning.html" aria-current="page" data-i18n="nav.strength">Styrketräning</a></li>
+        <li><a href="neurotraning.html" data-i18n="nav.neuro">Neuroträning</a></li>
+        <li><a href="behandlingar.html" data-i18n="nav.treatments">Behandlingar</a></li>
+        <li><a href="om-oss.html" data-i18n="nav.about">Om oss</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <a class="nav-cta" href="boka.html" data-i18n="nav.book">Boka tid</a>
+      <div class="lang-switch" role="group" aria-label="Språk / Language">
+        <button type="button" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+  <h2 data-i18n="nav.strength">Styrketräning</h2>
+</header>
+
+<main>
+  <section>
+    <div class="wrap split">
+      <img src="img/strength.jpg" alt="Styrketräning med motståndsband vid havet" loading="lazy">
+      <div>
+        <p class="eyebrow" data-i18n="strength.subhead">Återställ rörelse. Bygg styrka.</p>
+        <p data-i18n="strength.intro">Vetenskapligt grundad styrketräning baserad på modern biomekanik som förbättrar andning, kroppshållning och rörlighet samtidigt som du bygger styrka.</p>
+        <div class="actions">
+          <a class="btn" href="boka.html" data-i18n="common.bookSession">Boka en session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-tint">
+    <div class="wrap">
+      <h2 class="heading" data-i18n="strength.h1">Låt oss bygga ett styrkeprogram som är utformat specifikt för hur just din kropp rör sig.</h2>
+      <p data-i18n="strength.p1">De flesta styrkeprogram frågar hur du blir starkare. Den här metoden frågar först hur din kropp är designad att röra sig.</p>
+      <p data-i18n="strength.p2">Baserat på modern biomekanik, gångprinciper och samtida rörelsevetenskap &mdash; inklusive koncept utvecklade av rörelsespecialisten Conor Harris &mdash; tittar vi på hur din kropp andas, roterar, överför kraft och anpassar sig. Ditt styrkeprogram utformas sedan för att återställa effektiv rörelse samtidigt som du blir starkare, mer balanserad och mer motståndskraftig.</p>
+
+      <p class="subhead" data-i18n="strength.checklist.title">När du bokar den här sessionen får du:</p>
+      <ul class="checklist">
+        <li data-i18n="strength.checklist.1">En personlig biomekanisk bedömning</li>
+        <li data-i18n="strength.checklist.2">Ett gymbaserat styrketräningsprogram utformat specifikt för din kropp</li>
+        <li data-i18n="strength.checklist.3">Ett smartare sätt att bygga styrka genom bättre rörelse</li>
+      </ul>
+
+      <h2 class="heading" data-i18n="strength.h2">Din kropp kan lära sig att röra sig annorlunda.</h2>
+      <p data-i18n="strength.p3">Du behöver inte acceptera smärta, stelhet eller begränsad rörlighet bara för att du suttit vid ett skrivbord i flera år, utövat en enda sport eller återhämtat dig från en skada.</p>
+      <p data-i18n="strength.p4">Modern biomekanik förändrar hur vi förstår rörelse. Genom att förstå hur din kropp har anpassat sig kan vi hjälpa till att återställa balans, förbättra rörelsemönster och bygga bestående styrka.</p>
+
+      <div class="btn-center-wrap">
+        <a class="btn" href="boka.html" data-i18n="common.bookSession">Boka en session</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Götavägen 52, 187 63 Täby &middot; +46 73 063 78 78 &middot; <a href="mailto:christina@gymnovite.com">christina@gymnovite.com</a></p>
+    <div class="lang-switch on-light" role="group" aria-label="Språk / Language">
+      <button type="button" data-lang="sv" aria-pressed="true">Svenska</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+    <p class="credit">&copy; <span id="year"></span> Gymnovite</p>
+  </div>
+</footer>
+
+<script>
+window.I18N_TITLE = {
+  sv: "Styrketräning — Gymnovite",
+  en: "Strength Training — Gymnovite"
+};
+window.I18N = {
+  "nav.home": { sv: "Hem", en: "Home" },
+  "nav.strength": { sv: "Styrketräning", en: "Strength Training" },
+  "nav.neuro": { sv: "Neuroträning", en: "Neuro Training" },
+  "nav.treatments": { sv: "Behandlingar", en: "Treatments" },
+  "nav.about": { sv: "Om oss", en: "About" },
+  "nav.contact": { sv: "Kontakt", en: "Contact" },
+  "nav.book": { sv: "Boka tid", en: "Book Now" },
+  "common.bookSession": { sv: "Boka en session", en: "Book a Session" },
+
+  "strength.subhead": { sv: "Återställ rörelse. Bygg styrka.", en: "Restore movement. Build strength." },
+  "strength.intro": { sv: "Vetenskapligt grundad styrketräning baserad på modern biomekanik som förbättrar andning, kroppshållning och rörlighet samtidigt som du bygger styrka.", en: "Science-based weight training based on modern biomechanics that improves breathing, alignment, and mobility while building strength." },
+
+  "strength.h1": { sv: "Låt oss bygga ett styrkeprogram som är utformat specifikt för hur just din kropp rör sig.", en: "Work with me to build a strength program designed specifically for the way your body moves." },
+  "strength.p1": { sv: "De flesta styrkeprogram frågar hur du blir starkare. Den här metoden frågar först hur din kropp är designad att röra sig.", en: "Most strength programs ask how to make you stronger. This approach first asks how your body was designed to move." },
+  "strength.p2": { sv: "Baserat på modern biomekanik, gångprinciper och samtida rörelsevetenskap &mdash; inklusive koncept utvecklade av rörelsespecialisten Conor Harris &mdash; tittar vi på hur din kropp andas, roterar, överför kraft och anpassar sig. Ditt styrkeprogram utformas sedan för att återställa effektiv rörelse samtidigt som du blir starkare, mer balanserad och mer motståndskraftig.", en: "Built on modern biomechanics, gait principles, and contemporary movement science&mdash;including concepts developed by movement specialist Conor Harris&mdash;we look at how your body breathes, rotates, transfers force, and adapts. Your strength program is then designed to restore efficient movement while helping you become stronger, more balanced, and more resilient." },
+
+  "strength.checklist.title": { sv: "När du bokar den här sessionen får du:", en: "When you book this session, you'll receive:" },
+  "strength.checklist.1": { sv: "En personlig biomekanisk bedömning", en: "A personalized biomechanical assessment" },
+  "strength.checklist.2": { sv: "Ett gymbaserat styrketräningsprogram utformat specifikt för din kropp", en: "A gym-based strength training program designed specifically for your body" },
+  "strength.checklist.3": { sv: "Ett smartare sätt att bygga styrka genom bättre rörelse", en: "A smarter approach to building strength through better movement" },
+
+  "strength.h2": { sv: "Din kropp kan lära sig att röra sig annorlunda.", en: "Your body can learn to move differently." },
+  "strength.p3": { sv: "Du behöver inte acceptera smärta, stelhet eller begränsad rörlighet bara för att du suttit vid ett skrivbord i flera år, utövat en enda sport eller återhämtat dig från en skada.", en: "You don't have to accept pain, stiffness, or limited movement just because you've spent years at a desk, played one sport, or recovered from an injury." },
+  "strength.p4": { sv: "Modern biomekanik förändrar hur vi förstår rörelse. Genom att förstå hur din kropp har anpassat sig kan vi hjälpa till att återställa balans, förbättra rörelsemönster och bygga bestående styrka.", en: "Modern biomechanics is changing the way we understand movement. By understanding how your body has adapted, we can help restore balance, improve movement, and build lasting strength." }
+};
+</script>
+<script src="app.js"></script>
+</body>
+</html>

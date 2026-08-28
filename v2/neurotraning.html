@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neuroträning — Gymnovite</title>
+<meta name="description" content="Vetenskapligt grundade övningar för syn, balans och kroppsmedvetenhet — träna systemen bakom varje rörelse.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="banner page-banner" style="background-image:url('img/neuro-banner.jpg');">
+  <div class="site-header">
+    <a class="logo" href="index.html">Gymnovite</a>
+    <div class="header-right">
+      <ul class="nav">
+        <li><a href="index.html" data-i18n="nav.home">Hem</a></li>
+        <li><a href="styrketraning.html" data-i18n="nav.strength">Styrketräning</a></li>
+        <li><a href="neurotraning.html" aria-current="page" data-i18n="nav.neuro">Neuroträning</a></li>
+        <li><a href="behandlingar.html" data-i18n="nav.treatments">Behandlingar</a></li>
+        <li><a href="om-oss.html" data-i18n="nav.about">Om oss</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <a class="nav-cta" href="boka.html" data-i18n="nav.book">Boka tid</a>
+      <div class="lang-switch" role="group" aria-label="Språk / Language">
+        <button type="button" data-lang="sv" aria-pressed="true">SV</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+  <h2 data-i18n="nav.neuro">Neuroträning</h2>
+</header>
+
+<main>
+  <section>
+    <div class="wrap split">
+      <img src="img/neuro.jpg" alt="Neuroträning, sidoplanka på klippa" loading="lazy">
+      <div>
+        <p class="eyebrow" data-i18n="neuro.subhead">Träna systemen bakom varje rörelse.</p>
+        <p data-i18n="neuro.intro">Vetenskapligt grundade övningar för syn, balans och kroppsmedvetenhet som minskar muskelspänningar och förbättrar prestationen.</p>
+        <div class="actions">
+          <a class="btn" href="boka.html" data-i18n="common.bookSession">Boka en session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-tint">
+    <div class="wrap">
+      <h2 class="heading" data-i18n="neuro.h1">Träna systemen bakom varje rörelse.</h2>
+      <p data-i18n="neuro.p1">Långt innan en muskel drar ihop sig har din hjärna redan bestämt hur den vill att din kropp ska röra sig.</p>
+      <p data-i18n="neuro.p2">Varje sekund tar den emot information från dina ögon, innerörat, leder, muskler och hud. Tillsammans avgör dessa system om rörelsen känns säker, koordinerad och effektiv &mdash; eller om kroppen svarar med spänning och skydd.</p>
+      <p data-i18n="neuro.p3">Neuroträning använder enkla, vetenskapligt grundade övningar för syn, balans, kroppsmedvetenhet, andning och koordination för att förbättra kvaliteten på den informationen.</p>
+
+      <div class="quote-block" style="padding-left:0;padding-right:0;">
+        <span class="mark">&ldquo;</span>
+        <blockquote data-i18n="neuro.quote">Små förändringar i informationen som din hjärna tar emot kan ibland skapa förvånansvärt stora förändringar i hur din kropp rör sig och mår.</blockquote>
+      </div>
+
+      <p class="subhead" data-i18n="neuro.checklist.title">När du bokar den här sessionen får du:</p>
+      <ul class="checklist">
+        <li data-i18n="neuro.checklist.1">En introduktion till neuroträning</li>
+        <li data-i18n="neuro.checklist.2">Enkla övningar för syn, balans och kroppsmedvetenhet</li>
+        <li data-i18n="neuro.checklist.3">Videor och övningar du kan fortsätta träna hemma</li>
+      </ul>
+
+      <h2 class="heading" data-i18n="neuro.h2">Upptäck ett nytt sätt att förstå rörelse.</h2>
+      <p data-i18n="neuro.p4">De flesta av oss har lärt oss att träna våra muskler. Få av oss har lärt oss att träna systemen som styr dem.</p>
+      <p data-i18n="neuro.p5">Oavsett om du återhämtar dig från en skada, känner dig stel eller bara är nyfiken på hur hjärnan påverkar rörelse, erbjuder neuroträning ett helt nytt perspektiv på hur kroppen fungerar.</p>
+      <p data-i18n="neuro.p6">Ibland förändrar en ny input hela utfallet.</p>
+
+      <div class="btn-center-wrap">
+        <a class="btn" href="boka.html" data-i18n="common.bookSession">Boka en session</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Götavägen 52, 187 63 Täby &middot; +46 73 063 78 78 &middot; <a href="mailto:christina@gymnovite.com">christina@gymnovite.com</a></p>
+    <div class="lang-switch on-light" role="group" aria-label="Språk / Language">
+      <button type="button" data-lang="sv" aria-pressed="true">Svenska</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+    <p class="credit">&copy; <span id="year"></span> Gymnovite</p>
+  </div>
+</footer>
+
+<script>
+window.I18N_TITLE = {
+  sv: "Neuroträning — Gymnovite",
+  en: "Neuro Training — Gymnovite"
+};
+window.I18N = {
+  "nav.home": { sv: "Hem", en: "Home" },
+  "nav.strength": { sv: "Styrketräning", en: "Strength Training" },
+  "nav.neuro": { sv: "Neuroträning", en: "Neuro Training" },
+  "nav.treatments": { sv: "Behandlingar", en: "Treatments" },
+  "nav.about": { sv: "Om oss", en: "About" },
+  "nav.contact": { sv: "Kontakt", en: "Contact" },
+  "nav.book": { sv: "Boka tid", en: "Book Now" },
+  "common.bookSession": { sv: "Boka en session", en: "Book a Session" },
+
+  "neuro.subhead": { sv: "Träna systemen bakom varje rörelse.", en: "Train the systems behind every movement." },
+  "neuro.intro": { sv: "Vetenskapligt grundade övningar för syn, balans och kroppsmedvetenhet som minskar muskelspänningar och förbättrar prestationen.", en: "Science-based drills for vision, balance, and body awareness to reduce muscular tension and improve performance." },
+
+  "neuro.h1": { sv: "Träna systemen bakom varje rörelse.", en: "Train the systems behind every movement." },
+  "neuro.p1": { sv: "Långt innan en muskel drar ihop sig har din hjärna redan bestämt hur den vill att din kropp ska röra sig.", en: "Long before a muscle contracts, your brain has already decided how it wants your body to move." },
+  "neuro.p2": { sv: "Varje sekund tar den emot information från dina ögon, innerörat, leder, muskler och hud. Tillsammans avgör dessa system om rörelsen känns säker, koordinerad och effektiv &mdash; eller om kroppen svarar med spänning och skydd.", en: "Every second, it receives information from your eyes, inner ears, joints, muscles, and skin. Together, these systems determine whether movement feels safe, coordinated, and efficient&mdash;or whether your body responds with tension and protection." },
+  "neuro.p3": { sv: "Neuroträning använder enkla, vetenskapligt grundade övningar för syn, balans, kroppsmedvetenhet, andning och koordination för att förbättra kvaliteten på den informationen.", en: "Neuro Training uses simple, science-based drills for vision, balance, body awareness, breathing, and coordination to improve the quality of that information." },
+
+  "neuro.quote": { sv: "Små förändringar i informationen som din hjärna tar emot kan ibland skapa förvånansvärt stora förändringar i hur din kropp rör sig och mår.", en: "Small changes in the information your brain receives can sometimes create surprisingly big changes in how your body moves and feels." },
+
+  "neuro.checklist.title": { sv: "När du bokar den här sessionen får du:", en: "When you book this session, you'll receive:" },
+  "neuro.checklist.1": { sv: "En introduktion till neuroträning", en: "An introduction to Neuro Training" },
+  "neuro.checklist.2": { sv: "Enkla övningar för syn, balans och kroppsmedvetenhet", en: "Simple drills for vision, balance, and body awareness" },
+  "neuro.checklist.3": { sv: "Videor och övningar du kan fortsätta träna hemma", en: "Videos and exercises you can continue practicing at home" },
+
+  "neuro.h2": { sv: "Upptäck ett nytt sätt att förstå rörelse.", en: "Discover a new way to understand movement." },
+  "neuro.p4": { sv: "De flesta av oss har lärt oss att träna våra muskler. Få av oss har lärt oss att träna systemen som styr dem.", en: "Most of us have been taught to train our muscles. Few of us have been taught to train the systems that control them." },
+  "neuro.p5": { sv: "Oavsett om du återhämtar dig från en skada, känner dig stel eller bara är nyfiken på hur hjärnan påverkar rörelse, erbjuder neuroträning ett helt nytt perspektiv på hur kroppen fungerar.", en: "Whether you're recovering from an injury, feeling stiff, or simply curious about how your brain influences movement, Neuro Training offers a completely different perspective on how the body works." },
+  "neuro.p6": { sv: "Ibland förändrar en ny input hela utfallet.", en: "Sometimes changing the input changes the output." }
+};
+</script>
+<script src="app.js"></script>
+</body>
+</html>
