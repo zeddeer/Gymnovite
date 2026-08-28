@@ -789,10 +789,21 @@ footer .lang-switch {
   .hero,
   .banner {
     display: block;
-    /* Height now comes from the title's own padding plus the menu bar
-       below it, not from forcing the photo to fill most of the viewport. */
+    /* min-height on the container itself would only pad empty space
+       *after* .site-header (its last child) — the photo strip above the
+       menu bar is sized by .hero-content / .banner h2's own padding
+       instead, bumped further down. */
     min-height: 0;
   }
+
+  /* Each photo needs its own crop focus on mobile — the same
+     background-position that reads fine on a tall desktop banner can crop
+     straight through someone's face on a short mobile strip. Tuned per
+     photo below (checked against real screenshots, not guessed). */
+  .bg-hero { background-position: center 78%; }
+  .bg-strength { background-position: center 88%; }
+  .bg-neuro { background-position: center 60%; }
+  .bg-treatments { background-position: center 46%; }
 
   .site-header {
     /* relative (not static): keeps it in normal document flow like static
@@ -807,11 +818,16 @@ footer .lang-switch {
   }
 
   .hero-content {
-    padding: 3rem 1.5rem 2.5rem;
+    /* Extra top/bottom padding widens the visible photo strip above the
+       menu bar. Most of these photos are landscape (3:2) — on a narrow
+       phone the strip needs to grow past roughly a 3:2 box itself before
+       cover stops cropping top/bottom (where the person usually is) and
+       starts cropping the sides (open sky/water) instead. */
+    padding: 7.5rem 1.5rem 7rem;
   }
 
   .banner h2 {
-    padding: 2.5rem 1.5rem;
+    padding: 7.5rem 1.5rem;
   }
 
   .header-right {
