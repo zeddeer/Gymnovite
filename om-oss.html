@@ -13,9 +13,12 @@
 <body>
 
 <header class="banner page-banner" style="background-image:url('img/hero.jpg');">
-  <div class="site-header">
+  <div class="site-header" data-nav-open="false">
     <a class="logo" href="index.html">Gymnovite</a>
-    <div class="header-right">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Meny / Menu">
+      <span class="bar"></span>
+    </button>
+    <div class="header-right" id="site-nav">
       <ul class="nav">
         <li><a href="index.html" data-i18n="nav.home">Hem</a></li>
         <li><a href="styrketraning.html" data-i18n="nav.strength">Styrketräning</a></li>

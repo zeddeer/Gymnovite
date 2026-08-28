@@ -64,6 +64,29 @@
 
   applyLang(getLang());
 
+  // Mobile nav toggle (hamburger)
+  document.querySelectorAll('.site-header').forEach(function (header) {
+    var toggle = header.querySelector('.nav-toggle');
+    if (!toggle) return;
+
+    function setOpen(open) {
+      header.setAttribute('data-nav-open', open ? 'true' : 'false');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    toggle.addEventListener('click', function () {
+      setOpen(header.getAttribute('data-nav-open') !== 'true');
+    });
+
+    header.querySelectorAll('.header-right a').forEach(function (link) {
+      link.addEventListener('click', function () { setOpen(false); });
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 860) setOpen(false);
+    });
+  });
+
   // Generic "opens a pre-filled email" form handler.
   // Usage: <form data-mailto-form data-mailto-to="you@example.com" data-mailto-subject="...">
   document.querySelectorAll('form[data-mailto-form]').forEach(function (form) {
